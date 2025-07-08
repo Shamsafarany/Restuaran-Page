@@ -1,20 +1,9 @@
 function addMenu(){
     const content = document.querySelector("#content");
+    const tabs = document.querySelector(".tabs");
     content.innerHTML = "";
-    const tabs = document.createElement("div");
-    const Home = document.createElement("button");
-    const Menu = document.createElement("button");
-    const Contact = document.createElement("button");
-    Home.textContent = "Home";
-    Menu.textContent = "Menu";
-    Contact.textContent = "Contact";
-    Menu.classList.add("menu");
-
-    tabs.appendChild(Home);
-    tabs.appendChild(Menu);
-    tabs.appendChild(Contact);
-    content.appendChild(tabs);
-
+    content.append(tabs);
+   
     const h2 = document.createElement("h2");
     h2.innerText = "Our Menu";
     content.appendChild(h2);
