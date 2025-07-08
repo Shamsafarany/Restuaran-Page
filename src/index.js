@@ -2,6 +2,7 @@ import { loadPage } from "./page_load";
 import "./style.css";
 import {addMenu} from "./menu";
 import { addHome } from "./home";
+import { addContact } from "./contact";
 
 //create tab
 const content = document.querySelector("#content");
@@ -32,3 +33,6 @@ buttonMenu.addEventListener("click", addMenu);
 
 const buttonHome = document.querySelector(".home");
 buttonHome.addEventListener("click", addHome);
+
+const buttonContact = document.querySelector(".contact");
+buttonContact.addEventListener("click", addContact);
